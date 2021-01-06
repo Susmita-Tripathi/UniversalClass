@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>SNAP1</groupId>
-  <artifactId>Snapdeal_Maven</artifactId>
+  <groupId>UC01</groupId>
+  <artifactId>UniversalClass</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
 	  <dependency>
@@ -140,7 +140,7 @@
 				<version>2.17</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/snapdeal.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/uc_testing.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>			
