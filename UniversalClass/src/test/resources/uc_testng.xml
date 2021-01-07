@@ -1,0 +1,8 @@
+<suite name="uc_testngSuit">
+    <test name="testForgotPassword">
+         <classes>
+              <class name="base.ForgotPassword_base"/>
+              <class name="test.ForgotPassword_TestRunner"/>
+         </classes>
+     </test>
+</suite>
