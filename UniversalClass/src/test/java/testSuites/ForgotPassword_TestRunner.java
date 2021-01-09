@@ -13,6 +13,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		,tags= "@forgotPassword"
 		)
 
-public class ForgotPassword_TestRunner extends  AbstractTestNGCucumberTests {
+public class ForgotPassword_TestRunner extends AbstractTestNGCucumberTests{
 
 }

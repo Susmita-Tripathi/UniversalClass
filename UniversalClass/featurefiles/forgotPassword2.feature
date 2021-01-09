@@ -19,7 +19,7 @@ Feature: Forget password for unsubscribed user
     Given the user is on signin page
     When user click on forgot password 
     And enter <email>
-    Then display massage The mail is invalid
+    Then display massage The email is invalid
     Examples:
     | email |
     | rjyoita@gmail |
