@@ -8,9 +8,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {"featurefiles/forgotPassword1.feature","featurefiles/forgotPassword2.feature"}
+		features= {"featurefiles/t_forgotpass.feature"}
 		,glue= {"stepDefinitions","base"}
-		,tags= "@forgotPassword"
+		,tags= "@forgotpass"
 		)
 
 public class ForgotPassword_TestRunner extends AbstractTestNGCucumberTests{
