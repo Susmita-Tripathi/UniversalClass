@@ -2,8 +2,8 @@
     <test name="test">
          <classes>
               <class name="base.Base"/>
-              <class name="testSuites.SignIn_TestRunner"/>
               <class name="testSuites.ForgotPassword_TestRunner"/>
+              <class name="testSuites.SignIn_TestRunner"/>
               <class name="testSuites.Search_TestRunner"/>
          </classes>
      </test>
