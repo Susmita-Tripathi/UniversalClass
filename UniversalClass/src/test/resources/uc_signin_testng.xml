@@ -1,0 +1,8 @@
+<suite name="uc_signin_testngSuite">
+	<test name="testSignIn">
+		<classes>
+			<class name="base.SignIn_base"/>
+			<class name="testSuites.SignIn_testrunner"/>
+		</classes>
+	</test>	
+</suite>

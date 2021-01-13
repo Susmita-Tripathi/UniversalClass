@@ -1,37 +1,27 @@
 #Author: Amruta
 
 @SignIn
-Feature: SignIn
+Feature: SignIn for Subscribed user
+
 @tag1
-Scenario: Verify Member SignIn page
+Scenario: Verify Member SignIn for invalid input
 	
-	Given User is on universalclass home page
-	When User navigate to header and click signIn
-	Then Member signin page should be dispalyed
+ Given the user is on home page
+ When the user click on member signin page
+ Then enter invalid email password and click on signIn button and verify error message
 
+	
+		
 @tag2
-Scenario Outline: Verify Member SignIn for valid input
+Scenario: Verify Member SignIn for valid input #manual
 	
-	Given User is on Member SignIn page
-	When User enteres valid <email> <password> and click on signIn button
-	Then Member should be signIn
+	Given the user is on home page
+  When the user click on member signin page
+  And enter valid uid pwd and click on signIn button
+  Then user should be signedIn
 
-	Examples:
-	| email | password |
-	| amrutakolekar191@gmail.com | Amruta@1010 |
+		
 
-@tag3
-Scenario Outline: Verify Member SignIn for invalid inputs
 	
-	Given User is on Member SignIn page
-	When User enteres invalid <email> <password> and click on signIn button
-	Then the error message should be displayed
-	Examples:
-	| email | password |
-	| amrutakolekar191@gmail.com | Amruta@1001 |
-	| amrutakolekar19@gmail.com | Amruta@1010 |
-	| | Amruta@1010 |
-	| amrutakolekar191@gmail.com | |
-	| | |
-
-    
+	
+	

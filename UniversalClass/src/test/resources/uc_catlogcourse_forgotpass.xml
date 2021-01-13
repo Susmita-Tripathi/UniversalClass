@@ -1,0 +1,9 @@
+<suite name="uc_coursecatalog_forgotpass_testngSuite">
+	<test name="testSignIn">
+		<classes>
+			<class name="base.SignIn_base"/>
+			 <class name="testSuites.Course_Catalog_testrunner"/> 
+			 <class name="testSuites.Forgot_Password_testrunner"/> 
+		</classes>
+	</test>	
+</suite>
