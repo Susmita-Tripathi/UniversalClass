@@ -5,13 +5,14 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
+
 @RunWith(Cucumber.class)
 @CucumberOptions
 (		
-		features = {"featurefiles/InvalidCredentials_SignUp.feature","featurefiles/ValidCredentials_SignUp.feature"} /// which feature files to run	
+		features = {"featurefiles/SignIn.feature"} /// which feature files to run	
 		,glue={"stepDefinitions","base"}																	//package names having the scripts for the feature file		
-		,tags= {"@signup_invalid,@signup_valid"}											// the tags to run.... which are in feature file				
+		,tags= {"@signIn"}											// the tags to run.... which are in feature file				
 )
-public class SignUp_TestRunner extends AbstractTestNGCucumberTests{
+public class SignIn_TestRunner extends AbstractTestNGCucumberTests {
 
 }

@@ -1,0 +1,11 @@
+<suite name="UniversalClass">
+	<test name="test_UniversalClass">
+		<classes>
+			<class name="base.UniversalClass_Base"/>
+			<class name="testSuites.SearchCourse_TestRunner"/>
+			<class name="testSuites.SignIn_TestRunner"/>
+			<class name="testSuites.ForgotPassword_TestRunner"/>
+			<class name="testSuites.SignUp_TestRunner"/>											
+		</classes>
+	</test>	
+</suite>

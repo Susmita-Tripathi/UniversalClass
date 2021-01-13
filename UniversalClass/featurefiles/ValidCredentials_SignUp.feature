@@ -11,5 +11,5 @@ Feature: Sign Up
      
     Examples: 
       | firstname | lastname | email                    | password | 
-      | Smita     | Mhatre   | smitamhatre538@gmail.com | smita123 | 
+      | nishant     | konark   | knishant050@gmail.com | nishantkonark | 
   
