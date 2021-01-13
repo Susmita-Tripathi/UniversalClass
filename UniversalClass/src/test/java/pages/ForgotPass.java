@@ -22,9 +22,10 @@ import com.aventstack.extentreports.Status;
 import base.Base;
 
 
-public class ForgotPass extends Base {
-
-	@FindBy(xpath="//button[@class='dropbtn']") WebElement dropbutton;                 //PageFactory elements for forgot password page
+public class ForgotPass extends Base
+{
+	 //PageFactory elements for forgot password page
+	@FindBy(xpath="//button[@class='dropbtn']") WebElement dropbutton;                
 	@FindBy(xpath="//span[text()='Sign In']") WebElement sign;
 	@FindBy(xpath="//a[text()='Forgot your password?']") WebElement forgotbutton;
     @FindBy(xpath="//input[@name='Email']") WebElement Email;

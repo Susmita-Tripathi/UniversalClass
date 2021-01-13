@@ -35,7 +35,8 @@ public class Base {
 			public void before_scenario()
 			{
 				
-				try {
+				try 
+				{
 					prop = new Properties();
 					prop.load(new FileInputStream("src/test/resources/config.properties"));
 				}catch (Exception e) {}
