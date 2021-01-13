@@ -7,13 +7,10 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.aventstack.extentreports.Status;
-
 import base.SignIn_base;
 
 public class SignIn_pages extends SignIn_base{
@@ -22,7 +19,7 @@ public class SignIn_pages extends SignIn_base{
 	static @FindBy(xpath="//input[@name='username']") WebElement username;        //page factory element for SignIn page(email)
 	static @FindBy(xpath="//input[@name='password']") WebElement passwordtext;    //page factory element for SignIn page(password)
 	static @FindBy(xpath="//input[@name='SubmitButton']") WebElement SubmitButton;            //page factory element for SignIn page(SignIn button)
-	static @FindBy(xpath="//input[@name='SearchString']") WebElement search;                                //Page factory element for SignIn page(search text box)
+	                                
 	
 	public SignIn_pages()
 	{
@@ -93,7 +90,6 @@ public class SignIn_pages extends SignIn_base{
 			takescreenshot("Invalidcredentials.png");
 		}
 	}
-	
 	public void valid_signin() throws Exception    //method for giving valid input manually
 	{
 		Thread.sleep(1000);
@@ -121,7 +117,5 @@ public class SignIn_pages extends SignIn_base{
 			log.log(Status.FAIL, "Unsuccessful");
 			takescreenshot("SignedInUnsuccessful.png");
 		}
-			
-	}
-	
+	}	
 }

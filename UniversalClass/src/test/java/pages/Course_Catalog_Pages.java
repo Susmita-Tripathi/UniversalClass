@@ -15,9 +15,9 @@ import base.SignIn_base;
 
 public class Course_Catalog_Pages extends SignIn_base{
 	
-	static @FindBy(xpath="//*[@id=\"clssicon\"]") WebElement menubutton;        //page factory element for menu
+	static @FindBy(xpath="//button[@id='clssicon']") WebElement menubutton;        //page factory element for menu
 	static @FindBy(xpath="//*[@id=\"clssmnucontent\"]/div/a[2]/span") WebElement coursecatalogoption;  //page factory element for course catalog option 
-	static @FindBy(xpath="//*[@id=\"SearchString\"]") WebElement findcourse;  //page factory element for find course or search text box
+	static @FindBy(xpath="//input[@name='SearchString']") WebElement findcourse;  //page factory element for find course or search text box
 	
 	
 	public Course_Catalog_Pages()
@@ -26,7 +26,7 @@ public class Course_Catalog_Pages extends SignIn_base{
 		
 	}
 	
-	public void home_page() throws Exception       //method for open universal class home page
+	public void home_page() throws Exception              //method for open universal class home page
 	{
 		driver.get(prop.getProperty("url"));
 		Thread.sleep(1000);
@@ -53,16 +53,14 @@ public class Course_Catalog_Pages extends SignIn_base{
 	{
 		findcourse.clear();
 		findcourse.sendKeys(name);
-		
 		findcourse.sendKeys(Keys.ENTER);
-		
 	}
 	public void available_courses(String coursestatus) throws Exception         //method to get available courses
 	{
 		Thread.sleep(1000);
 		if(coursestatus.matches("available"))
 		{
-		String s2=driver.findElement(By.xpath("//div[@id='searchresults']/div/ul/li[1]/a[2]")).getText();
+		String s2=driver.findElement(By.xpath("//*[@id=\"searchresults\"]/div/ul/li[1]/a[2]")).getText();
 		System.out.println(s2);
 		if(s2.contains("Business"))
 		{
@@ -79,7 +77,7 @@ public class Course_Catalog_Pages extends SignIn_base{
 		}
 		if(coursestatus.matches("notavailable"))
 		{
-		String s3=driver.findElement(By.xpath("//div[@id='searchresults']/div/div/h2")).getText();
+		String s3=driver.findElement(By.xpath("//*[@id=\"searchresults\"]/div/div/h2")).getText();
 		System.out.println(s3);
 		if(s3.contains("No records matched your search criteria."))
 		{
@@ -94,9 +92,5 @@ public class Course_Catalog_Pages extends SignIn_base{
 			takescreenshot("WrongName.png");
 		}
 		}
-		
-		
-		
 	}
-	
 }
